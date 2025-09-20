@@ -17,7 +17,7 @@ class MySqlDB
             using (MySqlCommand cmd = new MySqlCommand(createDb, conn))
             {
                 cmd.ExecuteNonQuery();
-                Console.WriteLine($"Database '{database}' hazır.");
+                Console.WriteLine($"Database '{database}' ready.");
             }
         }
 
@@ -37,7 +37,7 @@ class MySqlDB
             using (MySqlCommand cmd = new MySqlCommand(createTable, conn))
             {
                 cmd.ExecuteNonQuery();
-                Console.WriteLine("Products tablosu hazır.");
+                Console.WriteLine("Table products ready.");
             }
         }
     }
